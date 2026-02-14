@@ -1,6 +1,6 @@
-import './App.css'
+import './ComingSoonPage.css'
 
-function App() {
+function ComingSoonPage() {
   return (
     <main className="coming-soon">
       <div className="glow glow-1" />
@@ -15,13 +15,13 @@ function App() {
         </p>
 
         <div className="actions">
-          <a href="https://wgsoft.com.co" target="_blank" rel="noreferrer">
+          <a href="https://wgsoft.com.co" target="_blank" rel="noopener noreferrer">
             Ir a wgsoft.com.co
           </a>
           <a
             href="https://github.com/williamgarciadev/learn-react"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Ver repositorio
           </a>
@@ -33,4 +33,4 @@ function App() {
   )
 }
 
-export default App
+export default ComingSoonPage

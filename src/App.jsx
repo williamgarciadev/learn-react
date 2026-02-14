@@ -1,34 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <main className="coming-soon">
+      <div className="glow glow-1" />
+      <div className="glow glow-2" />
+
+      <section className="card">
+        <p className="badge">WgSoft · React Lab</p>
+        <h1>Estamos construyendo algo pro 🚀</h1>
+        <p className="subtitle">
+          Esta web está en construcción. Muy pronto vas a ver aquí proyectos React
+          con enfoque real: código limpio, performance y experiencia moderna.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+        <div className="actions">
+          <a href="https://wgsoft.com.co" target="_blank" rel="noreferrer">
+            Ir a wgsoft.com.co
+          </a>
+          <a
+            href="https://github.com/williamgarciadev/learn-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver repositorio
+          </a>
+        </div>
+
+        <small>© {new Date().getFullYear()} WgSoft · Bogotá, Colombia</small>
+      </section>
+    </main>
   )
 }
 
